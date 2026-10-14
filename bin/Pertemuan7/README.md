@@ -14,6 +14,11 @@ Harga percup  15000 + (P mod 6) × 1000=20000
 Syarat minimal belanja untuk diskon = 80000 + (P mod 5) × 10000 = 90000
 Persentase diskon = 5 + (P mod 6) % = 10%
 
+P=19
+hargaPerCup = 15000 + (P mod 6) × 1000 = 16000
+Syarat minimal belanja untuk diskon = 80000 + (P mod 5) × 10000 = 120000
+Persentase diskon = 5 + (P mod 6) % = 6%
+
 Hasil Uji Studi Kasus 2 oleh Muhammmad Ariq Zaidan:
 |-------------------------------------------------------------|
 | No | Jenis | Dokumen | Juara/Dana | Output        | Sesuai? |
