@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Tugas1_11 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner Diego = new Scanner(System.in);
 
         System.out.print("Masukkan nilai n = ");
-        int n = sc.nextInt();
+        int n = Diego.nextInt();
 
         int totalAngka = 0; // Variabel untuk menghitung total banyaknya angka yang dicetak
 
@@ -24,6 +24,6 @@ public class Tugas1_11 {
 
         System.out.println("Total angka tercetak: " + totalAngka);
 
-        sc.close();
+        Diego.close();
 }
 }
