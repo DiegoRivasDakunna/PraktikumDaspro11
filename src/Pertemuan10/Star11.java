@@ -12,7 +12,7 @@ public class Star11 {
         int n = sc.nextInt();
         
         // Perulangan FOR untuk mencetak karakter '*' sebanyak n kali secara mendatar
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i+=2) {
             System.out.print("*");
         }
         
