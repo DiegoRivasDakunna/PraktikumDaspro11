@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Star11 {
     public static void main(String[] args) {
         // Deklarasi objek Scanner untuk menerima input dari keyboard
-        Scanner sc = new Scanner(System.in);
+        Scanner Diego = new Scanner(System.in);
         
         // Meminta pengguna memasukkan nilai n
         System.out.print("Masukkan nilai n = ");
-        int n = sc.nextInt();
+        int n = Diego.nextInt();
         
         // Perulangan FOR untuk mencetak karakter '*' sebanyak n kali secara mendatar
         for (int i = 1; i <= n; i+=2) {
@@ -20,6 +20,6 @@ public class Star11 {
         System.out.println();
         
         // Menutup objek Scanner
-        sc.close();
+        Diego.close();
     }
 }
