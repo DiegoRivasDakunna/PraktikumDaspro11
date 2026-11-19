@@ -27,7 +27,7 @@ public class latihan8 {
                 int kumpulTugas=0;
                 int kuis=0,uts=0,uas=0,tugas1=0,tugas2=0;
                 System.out.println("Masukkan nilai kuis ");
-                kuis=DiegoInt.nextInt();
+                kuis=DiegoInt.nextInt(); 
                 NAflat+=kuis*0.35;
                 System.out.println("Masukkan nilai uts ");
                 uts=DiegoInt.nextInt();
