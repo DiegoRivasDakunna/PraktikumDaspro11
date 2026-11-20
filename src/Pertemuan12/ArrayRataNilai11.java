@@ -3,39 +3,41 @@ package Pertemuan12;
 import java.util.Scanner;
 
 public class ArrayRataNilai11 {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        public static void main(String[] args) {
+        Scanner Diego = new Scanner(System.in);
         int[] nilaiMhs = new int[10];
         int total = 0;
+        int jmlLulus = 0; // Variabel penghitung mahasiswa lulus
         double rata2;
 
-        // 4. Isi array nilaiMhs dan akumulasikan total dalam perulangan yang sama
+        // Input nilai, akumulasi total, dan hitung jumlah mahasiswa lulus (> 70)
         for (int i = 0; i < nilaiMhs.length; i++) {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
-            nilaiMhs[i] = input.nextInt();
+            nilaiMhs[i] = Diego.nextInt();
             total += nilaiMhs[i];
+
+            if (nilaiMhs[i] > 70) {
+                jmlLulus++;
+            }
         }
 
-        // 5. Hitung nilai rata-rata
+        // Hitung nilai rata-rata
         rata2 = (double) total / nilaiMhs.length;
         System.out.println("Total nilai: " + total);
         System.out.println("Rata-rata: " + rata2);
+        System.out.println("Banyaknya mahasiswa lulus: " + jmlLulus);
 
-        // 6. Cari nilai tertinggi dan terendah
+        // Cari nilai tertinggi dan terendah
         int tertinggi = nilaiMhs[0];
         int terendah = nilaiMhs[0];
         for (int i = 1; i < nilaiMhs.length; i++) {
-            if (nilaiMhs[i] > tertinggi) {
-                tertinggi = nilaiMhs[i];
-            }
-            if (nilaiMhs[i] < terendah) {
-                terendah = nilaiMhs[i];
-            }
+            if (nilaiMhs[i] > tertinggi) tertinggi = nilaiMhs[i];
+            if (nilaiMhs[i] < terendah) terendah = nilaiMhs[i];
         }
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);
 
-        // 7. Tentukan kategori predikat kelas berdasarkan nilai rata-rata
+        // Tentukan predikat kelas
         String predikat;
         if (rata2 >= 85) {
             predikat = "SANGAT BAIK";
@@ -46,6 +48,6 @@ public class ArrayRataNilai11 {
         }
         System.out.println("Predikat kelas: " + predikat);
 
-        input.close();
+        Diego.close();
 }
 }
