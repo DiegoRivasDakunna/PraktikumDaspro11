@@ -7,16 +7,18 @@ public class ArrayNilai11 {
         int[] nilaiAkhir = new int[10];
         Scanner Diego = new Scanner(System.in);
 
-        // Menerima input dan mengisi elemen array nilaiAkhir
+        // Input 10 nilai mahasiswa ke dalam array
         for (int i = 0; i < nilaiAkhir.length; i++) {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
             nilaiAkhir[i] = Diego.nextInt();
         }
 
-        // Menampilkan seluruh isi elemen array beserta status kelulusan
+        // Tampilkan hanya mahasiswa yang lulus (nilai > 70)
+        System.out.println("\n=== Daftar Mahasiswa Lulus ===");
         for (int i = 0; i < nilaiAkhir.length; i++) {
-            String status = (nilaiAkhir[i] > 70) ? "LULUS" : "TIDAK LULUS";
-            System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (LULUS)");
+            }
         }
 
         Diego.close();
