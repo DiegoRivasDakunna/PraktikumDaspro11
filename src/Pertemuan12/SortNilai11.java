@@ -1,5 +1,5 @@
 package Pertemuan12;
-    import java.util.Arrays;
+ import java.util.Arrays;
 
 public class SortNilai11 {
     public static void main(String[] args) {
@@ -7,7 +7,8 @@ public class SortNilai11 {
 
         for (int i = 0; i < nilai.length - 1; i++) {
             for (int j = 0; j < nilai.length - 1 - i; j++) {
-                if (nilai[j] > nilai[j + 1]) {
+                // Ubah tanda '>' menjadi '<' untuk mengurutkan dari besar ke kecil
+                if (nilai[j] < nilai[j + 1]) {
                     int temp = nilai[j];
                     nilai[j] = nilai[j + 1];
                     nilai[j + 1] = temp;
