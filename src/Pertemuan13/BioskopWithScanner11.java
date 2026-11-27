@@ -30,10 +30,14 @@ public class BioskopWithScanner11 {
                         kolom = Diego.nextInt();
                         Diego.nextLine();
 
-                        if (baris >= 1 && baris <= penonton.length && kolom >= 1 && kolom <= penonton[baris - 1].length) {
-                            break;
-                        } else {
+                        if (baris < 1 || baris > penonton.length || kolom < 1 || kolom > penonton[baris - 1].length) {
                             System.out.println("Nomor baris atau kolom tidak tersedia! Silakan masukkan kembali.");
+                        } else if (penonton[baris - 1][kolom - 1] != null) {
+                            System.out.println("Peringatan: Kursi baris " + baris + " kolom " + kolom +
+                                    " sudah terisi oleh " + penonton[baris - 1][kolom - 1] +
+                                    "! Silakan pilih baris dan kolom lain.");
+                        } else {
+                            break;
                         }
                     }
 
