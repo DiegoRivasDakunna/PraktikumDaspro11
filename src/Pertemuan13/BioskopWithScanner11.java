@@ -22,11 +22,20 @@ public class BioskopWithScanner11 {
                 while (true) {
                     System.out.print("Masukkan nama: ");
                     nama = Diego.nextLine();
-                    System.out.print("Masukkan baris (1-4): ");
-                    baris = Diego.nextInt();
-                    System.out.print("Masukkan kolom (1-2): ");
-                    kolom = Diego.nextInt();
-                    Diego.nextLine();
+
+                    while (true) {
+                        System.out.print("Masukkan baris (1-" + penonton.length + "): ");
+                        baris = Diego.nextInt();
+                        System.out.print("Masukkan kolom (1-" + penonton[0].length + "): ");
+                        kolom = Diego.nextInt();
+                        Diego.nextLine();
+
+                        if (baris >= 1 && baris <= penonton.length && kolom >= 1 && kolom <= penonton[baris - 1].length) {
+                            break;
+                        } else {
+                            System.out.println("Nomor baris atau kolom tidak tersedia! Silakan masukkan kembali.");
+                        }
+                    }
 
                     penonton[baris - 1][kolom - 1] = nama;
 
