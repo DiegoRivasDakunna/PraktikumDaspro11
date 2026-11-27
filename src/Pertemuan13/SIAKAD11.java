@@ -2,8 +2,7 @@ package Pertemuan13;
 
 import java.util.Scanner;
 
-public class SIAKAD11 {
-   public static void main(String[] args) {
+public class SIAKAD11 {public static void main(String[] args) {
         Scanner Diego = new Scanner(System.in);
         int[][] nilai = new int[4][3];
 
@@ -16,6 +15,17 @@ public class SIAKAD11 {
                 totalPerSiswa += nilai[i][j];
             }
             System.out.println("Nilai rata-rata: " + (totalPerSiswa / nilai[i].length));
+        }
+
+        System.out.println("\n====================================");
+        System.out.println("Rata-rata nilai setiap mata kuliah:");
+
+        for (int j = 0; j < nilai[0].length; j++) {
+            double totalPerMatkul = 0;
+            for (int i = 0; i < nilai.length; i++) {
+                totalPerMatkul += nilai[i][j];
+            }
+            System.out.println("Mata kuliah " + (j + 1) + ": " + (totalPerMatkul / nilai.length));
         }
 
         Diego.close();
