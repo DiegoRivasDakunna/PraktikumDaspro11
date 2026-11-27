@@ -26,7 +26,7 @@ public class BioskopWithScanner11 {
             if (pilihan.equalsIgnoreCase("n")) {
                 break;
             }
-            Diego.close();
         }
+        Diego.close();
     }
 }
