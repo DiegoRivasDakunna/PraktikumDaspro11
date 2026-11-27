@@ -3,7 +3,7 @@ package Pertemuan13;
 import java.util.Scanner;
 
 public class BioskopWithScanner11 {
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         Scanner Diego = new Scanner(System.in);
         int baris, kolom, menu;
         String nama, pilihan;
@@ -54,7 +54,8 @@ public class BioskopWithScanner11 {
                 System.out.println("\n=== DAFTAR PENONTON ===");
                 for (int i = 0; i < penonton.length; i++) {
                     for (int j = 0; j < penonton[i].length; j++) {
-                        System.out.print(penonton[i][j] + "\t");
+                        String isiKursi = (penonton[i][j] == null) ? "***" : penonton[i][j];
+                        System.out.print(isiKursi + "\t");
                     }
                     System.out.println();
                 }
