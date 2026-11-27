@@ -21,10 +21,9 @@ public class Bioskop11 {
         System.out.printf("%s \t %s\n", penonton[2][0], penonton[2][1]);
         System.out.printf("%s \t %s\n", penonton[3][0], penonton[3][1]);
 
-        // Pertanyaan 8: Tampilkan nama penonton pada baris ke-3 (indeks 2) menggunakan for loop
-        System.out.println("Penonton pada baris ke-3: ");
-        for (int i = 0; i < penonton[2].length; i++) {
-            System.out.println(penonton[2][i]);
+        // Pertanyaan 10: Tampilkan nama penonton setiap baris menggunakan String.join()
+        for (int i = 0; i < penonton.length; i++) {
+            System.out.println("Penonton pada baris ke-" + (i + 1) + ": " + String.join(", ", penonton[i]));
         }
     }
 }
