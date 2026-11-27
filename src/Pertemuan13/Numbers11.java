@@ -10,9 +10,14 @@ public class Numbers11 {
         myNumbers[1] = new int[3];
         myNumbers[2] = new int[1];
 
-        // Pertanyaan 2: Memanggil Arrays.toString(myNumbers)
+        // Langkah 3: Tampilkan isi setiap baris
         for (int i = 0; i < myNumbers.length; i++) {
-            System.out.println(Arrays.toString(myNumbers));
+            System.out.println(Arrays.toString(myNumbers[i]));
+        }
+
+        // Pertanyaan 5 (Kode 17): Tampilkan panjang setiap baris
+        for (int i = 0; i < myNumbers.length; i++) {
+            System.out.println("Panjang baris ke-" + (i + 1) + ": " + myNumbers[i].length);
         }
     }
 }
