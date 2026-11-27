@@ -2,8 +2,10 @@ package Pertemuan13;
 
 public class Bioskop11 {
     public static void main(String[] args) {
+        // Langkah 2: Deklarasi array String penonton (4 baris dan 2 kolom)
         String[][] penonton = new String[4][2];
 
+        // Langkah 3: Isi setiap elemen array
         penonton[0][0] = "Amin";
         penonton[0][1] = "Bena";
         penonton[1][0] = "Candra";
@@ -13,9 +15,17 @@ public class Bioskop11 {
         penonton[3][0] = "Gisel";
         penonton[3][1] = "Hana";
 
+        // Langkah 4: Tampilkan semua isi elemen
         System.out.printf("%s \t %s\n", penonton[0][0], penonton[0][1]);
         System.out.printf("%s \t %s\n", penonton[1][0], penonton[1][1]);
         System.out.printf("%s \t %s\n", penonton[2][0], penonton[2][1]);
         System.out.printf("%s \t %s\n", penonton[3][0], penonton[3][1]);
+
+        // Pertanyaan 4: Tampilkan panjang array luar (baris) dan panjang tiap baris (kolom)
+        System.out.println(penonton.length);
+        System.out.println(penonton[0].length);
+        System.out.println(penonton[1].length);
+        System.out.println(penonton[2].length);
+        System.out.println(penonton[3].length);
     }
 }
